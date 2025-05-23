@@ -1,0 +1,457 @@
+@import url('https://fonts.cdnfonts.com/css/godber');             
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #cfc4b5, #9a8e81);
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    height: auto;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  .card {
+    background: #332b25;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90vw;
+    height: 80%;
+    max-width: 3000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Header styling */
+  .card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+   
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight:bold;
+  }
+  nav {
+    padding-left: 20px;
+    height: 100px;
+    width: 600px;
+  }
+  
+  nav div {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  nav a {
+    margin: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: font-size 0.3s ease, opacity 0.3s ease;
+  }
+  
+  nav a:hover {
+    font-size: 35px;
+    opacity: 1;
+  }  
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  #title-name{
+    font-size:300px;
+    font-weight: 500;
+    font-family: 'Godber', sans-serif;                                   
+  }
+
+  .info {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 50px;
+  }
+  
+  .info h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .info .number {
+    font-size:500px;
+    opacity: 0.1;
+    position: absolute;
+    top: -88px;
+    left: 60px;
+  }
+  
+  .info .bold {
+    font-weight: bold;
+  }             
+  .info ul {
+    text-transform: capitalize;
+    max-width: 53%;
+    list-style: none;
+    line-height: 1.5;
+    font-family: 'Lavire Personal Use', sans-serif;
+    font-family: 'Expletus Sans', sans-serif;
+                                                  
+    font-size: 3rem;
+    font-weight:100;
+    opacity: 0.8;
+  }
+  .cat-image {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    height: 70vh;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Blurred background div */
+  .background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0)
+    );
+    transition: backdrop-filter 2s ease-in-out, background-image 2s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Image stays clear */
+  .cat-image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* On hover, blur background only */
+  .cat-image:hover .background-blur {
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.2)
+    );
+  }
+  
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+  footer ul li{
+    padding-top: 18px;
+    opacity: 0.8;
+  }
+  footer ul li:hover{
+    opacity: 1;
+    scale: 1.5;
+  }
+  .list{
+    /* border-top: black 1px solid; */
+    min-height: 100px;
+    height:500px;
+    position:relative;
+    top:55px;
+    /* margin-bottom: 50px; */
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    /* border-radius: 20px; */
+    transform-style: preserve-3d;
+    perspective:1000px;
+    overflow: visible;
+  }
+  .list .item{
+    height: 100%;
+    flex:0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    filter: brightness(0)opacity(1);
+  }
+  .list .item:hover{
+    filter: brightness(1)opacity(1);
+    transform: translateZ(200px);
+  }
+  .list .item:hover + *{
+    filter: brightness(0.6)opacity(1);
+    transform: translateZ(100px)rotateY(30deg);
+  }
+  .list .item:hover + * + *{
+    filter: brightness(0.4)opacity(1);
+    transform: translateZ(70px)rotateY(20deg);
+  }
+  .list .item:hover + * + * + *{
+    filter: brightness(0.2)opacity(1);
+    transform: translateZ(30px)rotateY(10deg);
+  }
+  .list .item:has(+*:hover){
+    filter: brightness(0.6)opacity(1);
+    transform: translateZ(100px) rotateY(-30deg);
+  }
+  .list .item:has(+*+*:hover){
+    filter: brightness(0.4)opacity(1);
+    transform: translateZ(70px) rotateY(-20deg);
+  }
+   .list .item:has(+*+*+*:hover){
+    filter: brightness(0.2)opacity(1);
+    transform: translateZ(30px) rotateY(-10deg);
+  }
+  .list .item img{
+    aspect-ratio: 9/16;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 10px;
+  }
+  
+  #page-name {
+  text-align: center;
+  font-size: 3rem; /* increased from 2rem */
+  margin-bottom: 25px;
+}
+
+.card2 {
+  height: 50%;
+  position: relative;
+  top: -100px;
+  /* removed left:px; since it's invalid */
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 800px;
+  width: 60%;
+  line-height: 1.5;
+  font-family: 'Expletus Sans', sans-serif;
+  font-weight: 100;
+}
+
+/* Skills content */
+.projects-list h2 {
+  font-size: 3rem; /* increased from 5rem */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #c4c4c4;
+}
+
+.projects-list p {
+  font-size: 2.5rem; /* increased from 5rem */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+  .side{
+    z-index: 2;
+    height: 70vh;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .side .sidelo{
+    height: 100%;
+  }
+  .side .sidelo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.autoRotate{
+  z-index: 1;
+  position: absolute;
+  right: 1%;
+  bottom: 35%;
+  height: 1000px;
+  animation: autoRotateAnimation;
+  animation-timeline: view();
+}
+.autoRotate img{
+  height: 100%;
+  width: 100%;
+}
+@keyframes autoRotateAnimation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .card {
+    width: 95vw;
+    height: auto;
+    padding: 20px;
+    margin: 2% 0;
+  }
+
+  #title-name {
+    font-size: 80px !important;
+    line-height: 1.2;
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+    margin: 5px;
+    display: block;
+  }
+
+  nav a:hover {
+    font-size: 22px;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .info {
+    margin-left: 0;
+    min-width: auto;
+  }
+
+  .info .number {
+    font-size: 150px !important;
+    top: -30px;
+    left: 10px;
+  }
+
+  .info ul {
+    font-size: 1.5rem !important;
+    max-width: 100%;
+  }
+  .list {
+    height: 300px;
+    top: 20px;
+    width: 100%;
+    overflow-x: auto;
+    perspective: 500px;
+    justify-content: flex-start;
+  }
+
+  .list .item {
+    flex: 0 0 70%;
+    min-width: 70%;
+    transform: none !important;
+    filter: brightness(1) opacity(1) !important;
+  }
+
+  .list .item img {
+    max-height: 250px;
+    aspect-ratio: 16/9;
+    margin: 0 10px;
+  }
+
+  /* Disable complex 3D effects on mobile */
+  .list .item:hover,
+  .list .item:hover + *,
+  .list .item:hover + * + *,
+  .list .item:hover + * + * + *,
+  .list .item:has(+*:hover),
+  .list .item:has(+*+*:hover),
+  .list .item:has(+*+*+*:hover) {
+    transform: none !important;
+    filter: brightness(1) opacity(1) !important;
+  }
+
+  .side {
+    position: fixed;
+    right: -50px;
+    bottom: 20%;
+    height: 200px;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .autoRotate {
+    height: 300px;
+    bottom: 30%;
+    right: -80px;
+    opacity: 0.2;
+  }
+
+  .cat-image {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .cat-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .background-blur {
+    display: none; /* Remove complex blur effect on mobile */
+  }
+}
