@@ -6,8 +6,13 @@
   }
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #cfc4b5, #9a8e81);
     color: #fff;
+  }
+  .extrabody{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #cfc4b5, #9a8e81);
     display: flex;
     min-height: 100vh;
     height: auto;
@@ -16,11 +21,6 @@
     height: 100vh;
     flex-direction:row;
     flex-wrap:wrap;
-  }
-  .extrabody{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
   }
   .card {
     background: #332b25;
@@ -175,16 +175,25 @@
     opacity: 1;
     scale: 1.5;
   }
+  .incase{
+    height: 25vh;
+    position: relative;
+    background-color: #332b25;
+  }
   .list{
     /* border-top: black 1px solid; */
-    min-height: 100px;
+    min-height: 300px;
     height:500px;
-    position:relative;
-    top:55px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    translate: -50% -50%;
+    /* top:55px; */
     /* margin-bottom: 50px; */
     width:100vw;
     display: flex;
     justify-content:center;
+    align-items: center;
     /* border-radius: 20px; */
     transform-style: preserve-3d;
     perspective:1000px;
@@ -315,7 +324,7 @@
 }
 .finalfoot{
   width: 100%;
-  height: 10%;
+  height: 100px;
   position: relative;
   bottom: -50px;
   /* border-radius: 40px; */
