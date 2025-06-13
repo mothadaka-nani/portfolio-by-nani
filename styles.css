@@ -405,7 +405,7 @@
     }
     
     @media (min-width: 1500px) {
-      /* .card {
+     .card {
         max-width: 3800px;
         aspect-ratio: 16/9;
       }
@@ -462,5 +462,5 @@
       }
       .list .item{
         scale: 2;
-      } */
+      } 
     }
