@@ -254,7 +254,7 @@
     } 
     #page-name2 {
       font-family: 'Godber', sans-serif;
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: 100;
       width: 100%;
       background: linear-gradient(90deg, #332b25,rgb(0, 0, 0), rgb(0, 0, 0), #332b25);
@@ -293,6 +293,7 @@
     .achievement-text {
       text-align: center;
       font-weight: 100;
+      font-size: 1.1rem;
       font-family: 'BR Shape', sans-serif;                                  
     }
 
@@ -466,16 +467,15 @@
         font-size: 1.4rem;
       }
       #page-name2 {
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 20px;
       }
 
       .achievement-box:hover {
         transform: scale(1.2); /* Slightly less zoom on tablet */
       }
-
       .achievement-text a {
-        font-size: 28px;
+        font-size: 1.5rem;
       }
       
     }
