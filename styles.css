@@ -75,7 +75,9 @@
     
     nav a:hover {
       opacity: 1;
-    }  
+      scale: 1.15;
+      background:linear-gradient(90deg,rgb(170, 11, 11), rgb(0, 0, 0));
+    }
     
     main {
       display: flex;
@@ -112,7 +114,7 @@
       list-style:circle;
       line-height: 1.5;
       font-family: 'Expletus Sans', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 100;
       opacity: 0.8;
       padding: 0 10px;
@@ -145,10 +147,12 @@
     footer {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      margin-top: 0px;
       font-size: 1rem;
       opacity: 0.6;
       width: 100%;
+      scale: 0.5;
+      
     }
     
     footer ul {
@@ -183,8 +187,8 @@
       display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      gap: 15px;
-      padding: 0 15px;
+      gap: 10px;
+      padding: 0 5px;
       -webkit-overflow-scrolling: touch;
     }
     
@@ -212,7 +216,7 @@
     }
     
     .list .item img {
-      height: 200px;
+      height: 100px;
       aspect-ratio: 9/16;
       object-fit: cover;
       border-radius: 15px;
@@ -254,12 +258,12 @@
     } 
     #page-name2 {
       font-family: 'Godber', sans-serif;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 100;
       width: 100%;
       background: linear-gradient(90deg, #332b25,rgb(0, 0, 0), rgb(0, 0, 0), #332b25);
       color: white;
-      padding: 10px;
+      /* padding: 1px; */
       text-align: center;
       border-radius: 8px;
     }
@@ -276,6 +280,7 @@
 
     .achievement-box {
       background-color: #000000;
+      border: #423d08 solid 1px;
       width: 100%;
       aspect-ratio: 4 / 3; /* Certificate-like shape */
       border-radius: 12px;
@@ -330,7 +335,7 @@
       .card {
         padding: 50px;
         height: auto;
-        max-width: 1000px;
+        max-width: 1200px;
       }
       
       nav .logo {
@@ -349,17 +354,13 @@
         font-size: 1rem;
         padding: 10px 20px;
       }
-      nav a:hover{
-        scale: 1.15;
-        background:linear-gradient(90deg,rgb(170, 11, 11), rgb(0, 0, 0));
-      }
       main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         position: static;
         transform: none;
-        margin-top: 30px;
+        /* margin-top: 30px; */
       }
       
       #title-name {
@@ -382,12 +383,12 @@
       }
       
       .info ul {
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding: 0;
       }
       
       .cat-image {
-        max-width: 350px;
+        max-width: 300px;
         height: 500px;
       }
        footer ul {  
@@ -409,7 +410,7 @@
       .list {
         justify-content: center;
         overflow: visible;
-        height: 300px;
+        /* height: 300px; */
         perspective: 1000px;
         transform-style: preserve-3d;
       }
@@ -455,30 +456,29 @@
       }
       
       .list .item img {
-        height: 250px;
+        height:150px;
       }
       
       #page-name {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       
       .projects-list h2 {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
       }
       
       .projects-list p {
-        font-size: 1.4rem;
+        font-size: 1rem;
       }
       #page-name2 {
-        font-size: 3rem;
-        padding: 20px;
+        font-size: 2rem;
       }
 
       .achievement-box:hover {
-        transform: scale(1.2); /* Slightly less zoom on tablet */
+        transform: scale(1.2);
       }
       .achievement-text a {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
       
     }
