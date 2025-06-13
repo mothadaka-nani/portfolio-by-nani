@@ -330,11 +330,11 @@
       .card {
         padding: 50px;
         height: auto;
-        max-width: 1200px;
+        max-width: 1000px;
       }
       
       nav .logo {
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: left;
         width: auto;
         margin-bottom: 0;
@@ -349,7 +349,10 @@
         font-size: 1rem;
         padding: 10px 20px;
       }
-      
+      nav a:hover{
+        scale: 1.15;
+        background:linear-gradient(90deg,rgb(170, 11, 11), rgb(0, 0, 0));
+      }
       main {
         flex-direction: row;
         justify-content: space-between;
