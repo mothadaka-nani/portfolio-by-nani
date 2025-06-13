@@ -63,7 +63,7 @@
     
     nav a {
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-decoration: none;
       text-transform: uppercase;
       opacity: 0.8;
@@ -322,7 +322,6 @@
     .finalfoot img {
       width: 100%;
       height: auto;
-      border-radius: 20px;
       object-fit:cover;
     }
     
@@ -351,8 +350,8 @@
       }
       
       nav a {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 0.8rem;
+        padding: 15px 15px;
       }
       main {
         flex-direction: row;
