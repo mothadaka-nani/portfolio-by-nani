@@ -284,11 +284,11 @@
 
     .achievement-box {
       background-color: #000000;
-      border: #423d08 solid 1px;
+      border: #071d58 solid 1px;
       width: 100%;
       aspect-ratio: 4 / 3; /* Certificate-like shape */
       border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -296,7 +296,7 @@
     }
 
     .achievement-box:hover {
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
 
     .achievement-text {
@@ -304,7 +304,14 @@
       text-align: center;
       font-weight: 100;
       font-size: 0.6rem;
-      font-family: 'BR Shape', sans-serif;                                  
+      font-family: 'Godber', sans-serif;
+      background-color: rgb(105, 74, 43);
+      padding: 2px;
+      border-radius: 2px;     
+    }
+    .achievement-text:hover{
+      background:linear-gradient(90deg,maroon,black,rgb(3, 3, 143));
+      border: #000000 solid 1px;
     }
 
     .achievement-text a {
@@ -489,7 +496,7 @@
         font-size: 2rem;
       }
       
-    .achievements-container {
+      .achievements-container {
       z-index: 2;
       width: 100%;
       display: grid;
@@ -500,23 +507,15 @@
       }
 
       .achievement-box {
-      background-color: #000000;
-      border: #423d08 solid 1px;
-      width: 100%;
-      aspect-ratio: 4 / 3; /* Certificate-like shape */
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s ease;
       }
 
       .achievement-box:hover {
         transform: scale(1.2);
       }
       .achievement-text {
-        margin-top:0px;
+        margin-top:20px;
+        border-radius: 10px;
       }
       .achievement-text a {
         font-size: 1rem;
