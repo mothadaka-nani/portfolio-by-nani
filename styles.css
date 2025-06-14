@@ -318,6 +318,7 @@
       font-family: 'Godber', sans-serif;
       background:linear-gradient(90deg,#332b25,rgb(97, 89, 76),#332b25);
       padding: 2px;
+      letter-spacing: 1px;
       border-radius: 2px;     
     }
     .achievement-text:hover{
