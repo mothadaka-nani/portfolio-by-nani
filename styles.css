@@ -305,13 +305,13 @@
       font-weight: 100;
       font-size: 0.6rem;
       font-family: 'Godber', sans-serif;
-      background-color: rgb(105, 74, 43);
+      background:linear-gradient(90deg,#332b25,black,#332b25);
       padding: 2px;
       border-radius: 2px;     
     }
     .achievement-text:hover{
-      background:linear-gradient(90deg,maroon,black,rgb(3, 3, 143));
-      border: #000000 solid 1px;
+      background:linear-gradient(90deg,black,#332b25,black);
+      /* border: #000000 solid 1px; */
     }
 
     .achievement-text a {
@@ -345,6 +345,7 @@
       
       .card {
         padding: 50px;
+        padding-bottom: 10px;
         height: auto;
         max-width: 1200px;
       }
