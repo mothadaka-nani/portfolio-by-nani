@@ -87,14 +87,43 @@
     <div class="card" id="projects">
       <h1 style="background: linear-gradient(90deg,#332b25, #332b25,maroon,maroon,#332b25,#332b25);" id="page-name">PROJECTS</h1>
         <div class="projects-list">
-          <h2>Web Development Projects:</h2>
-            <p><a style="text-decoration: none; color:rgb(168, 7, 7);" href="https://mothadaka-nani.github.io/CLASSROOM-ATTENDANCE-APPLICATION/">Classroom Attendance Application</a>, 
-              <a style="text-decoration: none; color:rgb(168, 7, 7);"  href="https://mothadaka-nani.github.io/music-player/">Music Player</a>, 
-              <a style="text-decoration: none; color:rgb(168, 7, 7);"  href="https://mothadaka-nani.github.io/todo-List/">To-do List</a>, 
-              <a style="text-decoration: none; color:rgb(168, 7, 7);" href="https://mothadaka-nani.github.io/rock-paper-scissors-game/">Rock Paper Scissors</a>
-            </p>
-    
-          <h2> Comprehensive Research on Mobile Application Security Assessment <a style="text-decoration: none; color:rgb(168, 7, 7);"     href="https://github.com/Rlndinesh/Mobile_application_security_assessment">(GitHub)</a>:</h2>
+          <h2>web Development Projects:</h2>
+          <div class="web-ap">
+
+            <div>
+              <a href="https://mothadaka-nani.github.io/rock-paper-scissors-game/"><div style="background: url(app1.jpg);
+            background-size: cover;" class="web-apps"></div>
+              </a>
+              <div class="web-app-text">
+                <p>Rock Paper Scissors</p></div>
+            </div>
+
+            <div>
+              <a href="https://mothadaka-nani.github.io/CLASSROOM-ATTENDANCE-APPLICATION/"><div style="background: url(app2.jpg);
+            background-size: cover;" class="web-apps"></div>
+              </a>
+              <div class="web-app-text">
+                <p>Classroom Attendance</p></div>
+            </div>
+
+            <div>
+              <a href="https://mothadaka-nani.github.io/music-player/"><div style="background: url(app3.jpg);
+            background-size: cover;" class="web-apps"></div>
+              </a>
+              <div class="web-app-text">
+                <p>Music Player</p></div>
+            </div>
+
+            <div>
+              <a href="https://mothadaka-nani.github.io/todo-List/"><div style="background: url(app4.jpg);
+            background-size: cover;" class="web-apps"></div>
+              </a>
+              <div class="web-app-text">
+                <p>To-do List</p></div>
+            </div>
+
+          </div>
+          <h2> Comprehensive Research on Mobile Application Security Assessment <a style="text-decoration: none; color:rgb(168, 7, 7);"     href="https://github.com/Rlndinesh/Mobile_application_security_assessment">(GitHub link)</a>:</h2>
             <p> Combined static, dynamic,malware analysis, and reverse engineering to identify mobile app vulnerabilities. Performed review penetration testing, and behavioral analysis. Uncovered hidden threats through reverse engineering and malware detection.</p>
           <h2> Microsoft Azure Chatbot:</h2>
             <p> Designed and implemented an AI-powered chatbot using Microsoft Azure’s Bot Framework
@@ -209,7 +238,7 @@
   function setMainImage(imageSrc) {
     document.getElementById('main-img').src = imageSrc;
   }
-  
+
   document.addEventListener("DOMContentLoaded", function () {
   const style = document.createElement("style");
   const timestamp = new Date().getTime();
