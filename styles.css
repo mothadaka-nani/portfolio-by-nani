@@ -362,7 +362,7 @@
         background-position: center;
         z-index: -1;
 
-        mask-image: url(black\ splash\ ink.png);
+        mask-image: url(bg1.gif);
         mask-size: cover;
         mask-position: center;
       }
