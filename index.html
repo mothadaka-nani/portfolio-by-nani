@@ -45,7 +45,7 @@
 
         <div class="cat-image">
           <div class="background-blur"></div>
-          <img src="a8.jpg" alt="Portfolio Image">
+          <img id="main-img" src="a8.jpg" alt="Portfolio Image">
         </div>      
       </main>
 
@@ -67,17 +67,17 @@
   
   <div class="incase">
     <div class="list">
-      <div class="item"><img src="a3.jpg" alt="Project 1"></div>
-      <div class="item"><img src="a4.webp" alt="Project 2"></div>
-      <div class="item"><img src="a5.jpg" alt="Project 3"></div>
-      <div class="item"><img src="a6.jpg" alt="Project 4"></div>
-      <div class="item"><img src="a1.png" alt="Project 5"></div>
-      <div class="item"><img src="a2.png" alt="Project 6"></div>
-      <div class="item"><img src="a7.jpg" alt="Project 7"></div>
-      <div class="item"><img src="a8.jpg" alt="Project 8"></div>
-      <div class="item"><img src="a9.jpg" alt="Project 9"></div>
-      <div class="item"><img src="a10.jpg" alt="Project 10"></div>
-      <div class="item"><img src="a11.jpg" alt="Project 11"></div>
+      <div class="item" onclick="setMainImage('a3.jpg')"><img src="a3.jpg" alt="Project 1"></div>
+      <div class="item" onclick="setMainImage('a4.webp')"><img src="a4.webp" alt="Project 2"></div>
+      <div class="item" onclick="setMainImage('a5.jpg')"><img src="a5.jpg" alt="Project 3"></div>
+      <div class="item" onclick="setMainImage('a6.jpg')"><img src="a6.jpg" alt="Project 4"></div>
+      <div class="item" onclick="setMainImage('a1.png')"><img src="a1.png" alt="Project 5"></div>
+      <div class="item" onclick="setMainImage('a2.png')"><img src="a2.png" alt="Project 6"></div>
+      <div class="item" onclick="setMainImage('a7.jpg')"><img src="a7.jpg" alt="Project 7"></div>
+      <div class="item" onclick="setMainImage('a8.jpg')"><img src="a8.jpg" alt="Project 8"></div>
+      <div class="item" onclick="setMainImage('a9.jpg')"><img src="a9.jpg" alt="Project 9"></div>
+      <div class="item" onclick="setMainImage('a10.jpg')"><img src="a10.jpg" alt="Project 10"></div>
+      <div class="item" onclick="setMainImage('a11.jpg')"><img src="a11.jpg" alt="Project 11"></div>
     </div>
   </div>
   
@@ -203,4 +203,10 @@
     <img src="foot.jpg" alt="Footer Image">
   </div>
 </body>
+  <script>
+  function setMainImage(imageSrc) {
+    document.getElementById('main-img').src = imageSrc;
+  }
+</script>
+
 </html>

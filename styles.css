@@ -8,9 +8,7 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
-      /* background: linear-gradient(to bottom, #cfc4b5, #9a8e81); */
-      background: url(a1.png);
-      background-size: contain;
+      background: linear-gradient(to bottom, #cfc4b5, #9a8e81);
       min-height: 100vh;
       overflow-x: hidden;
     }
