@@ -351,9 +351,21 @@
     /* Tablet and Desktop Styles */
     @media screen and (min-width: 770px) {
       .extrabody {
-        /* padding: 30px; */
+        padding:0;
       }
-      
+      .extrabody::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url(foot.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+
+        mask-image: url(black\ splash\ ink.png);
+        mask-size: cover;
+        mask-position: center;
+      }
       .card {
         top:-50px;
         scale: 0.8;
