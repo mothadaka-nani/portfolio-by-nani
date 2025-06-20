@@ -384,11 +384,10 @@
       padding: 30px 20px;
       text-align: center;
       gap: 15px;
-      animation: fadeIn 1s ease-in;
     }
 
     .finalfoot img {
-      width: 80px;
+      width: 90px;
       aspect-ratio: 1;
       object-fit: contain;
       border-radius: 50%;
@@ -403,11 +402,6 @@
       max-width: 600px;
       line-height: 1.6;
       color: #e0e0e0;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     svg path{
@@ -641,9 +635,14 @@
       }
       
     }
-
+    .finalfoot{
+      position: relative;
+      /* top:-100px; */
+    }
     .finalfoot img {
       max-width: 120px;
+      background-color: #fff;
+      border: #000000 solid 1px;
     }
     .finalfoot img:hover {
       transform: scale(1.05);
