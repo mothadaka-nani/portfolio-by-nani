@@ -25,16 +25,16 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-image: url(foot.jpg);
+        background-image: url(extrapics/foot.jpg);
         background-size: cover;
         background-position: center;
         z-index: -1;
 
-        mask-image: url(bg1.gif);
+        mask-image: url(extrapics/bg1.gif);
         mask-size: cover;
         mask-position: center;
 
-        -webkit-mask-image: url(bg1.gif);
+        -webkit-mask-image: url(extrapics/bg1.gif);
         -webkit-mask-size: cover;
         -webkit-mask-position: center;
        }
@@ -78,22 +78,26 @@
     }
     
     nav a {
-      color: #fff;
-      font-size: 0.6rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      opacity: 0.8;
-      padding: 8px 15px;
-      transition: opacity 0.3s ease;
-      background: rgba(154, 142, 129, 0.3);
-      border-radius: 10px;
+    color: #fff;
+    font-size: 0.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.8;
+    padding: 8px 15px;
+    background: rgba(154, 142, 129, 0.3);
+    border-radius: 10px;
+    transition: 
+      opacity 0.3s ease,
+      transform 0.5s ease-in-out,
+      background-color 1s ease; /* fixed spelling */
     }
-    
+
     nav a:hover {
       opacity: 1;
-      scale: 1.15;
-      background:linear-gradient(90deg,rgb(170, 11, 11), rgb(0, 0, 0));
+      transform: scale(1.15);
+      background-color:#660606;
     }
+
     
     main {
       display: flex;
@@ -393,7 +397,6 @@
     }
 
     .final-text p {
-      font-size: 0.9rem;
       font-family:'Godber', sans-serif;  
       letter-spacing: 0.5px;
       margin: 0;
@@ -413,7 +416,7 @@
       stroke-width: 0.7;
       stroke-dasharray: 600;
       stroke-dashoffset: 600;
-      animation: textanimation 4s ease-in-out forwards;
+      animation: textanimation 5s ease-in-out forwards;
     }
     @keyframes textanimation{
       0%{
@@ -505,14 +508,13 @@
         border-radius: 20px;
         gap: 50px;
       }
-      /* footer ul li {
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-      } */
+      footer ul li {
+      transition: transform 0.5s ease-out;
+      }
       
       footer ul li:hover {
         opacity: 1;
-        scale: 1.5;
+        transform: scale(1.2);
       }
       .incase {
       background-color: #332b25;
@@ -647,9 +649,9 @@
       transform: scale(1.05);
     }
     .final-text p {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
     }
-    
+
     /* @media screen and (min-width: 1500px) {
      .card {
         max-width: 3800px;

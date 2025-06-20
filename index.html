@@ -47,7 +47,7 @@
 
         <div class="cat-image">
           <div class="background-blur"></div>
-          <img id="main-img" src="a5.jpg" alt="Portfolio Image">
+          <img id="main-img" src="pics/a4.jpg" alt="Portfolio Image">
         </div>      
       </main>
 
@@ -69,12 +69,18 @@
   
   <div class="incase">
     <div class="list">
-      <div class="item" onclick="setMainImage('a1.png')"><img src="a1.png" alt="Pic 1"></div>
-      <div class="item" onclick="setMainImage('a2.webp')"><img src="a2.webp" alt="Pic 2"></div>
-      <div class="item" onclick="setMainImage('a3.jpg')"><img src="a3.jpg" alt="Pic 3"></div>
-      <div class="item" onclick="setMainImage('a4.jpg')"><img src="a4.jpg" alt="Pic 4"></div>
-      <div class="item" onclick="setMainImage('a5.jpg')"><img src="a5.jpg" alt="Pic 5"></div>
-      <div class="item" onclick="setMainImage('a6.jpg')"><img src="a6.jpg" alt="Pic 6"></div>
+      <div class="item" onclick="setMainImage('pics/a1.webp')"><img src="pics/a1.webp" alt="Pic 1"></div>
+      <div class="item" onclick="setMainImage('pics/a2.jpg')"><img src="pics/a2.jpg" alt="Pic 2"></div>
+      <div class="item" onclick="setMainImage('pics/a3.jpg')"><img src="pics/a3.jpg" alt="Pic 3"></div>    
+      <div class="item" onclick="setMainImage('pics/a4.jpg')"><img src="pics/a4.jpg" alt="Pic 4"></div>
+      <div class="item" onclick="setMainImage('pics/a5.jpg')"><img src="pics/a5.jpg" alt="Pic 5"></div>
+      <div class="item" onclick="setMainImage('pics/a6.png')"><img src="pics/a6.png" alt="Pic 6"></div>
+      <div class="item" onclick="setMainImage('pics/a7.jpg')"><img src="pics/a7.jpg" alt="Pic 7"></div>
+      <div class="item" onclick="setMainImage('pics/a8.jpg')"><img src="pics/a8.jpg" alt="Pic 8"></div>
+      <div class="item" onclick="setMainImage('pics/a9.jpg')"><img src="pics/a9.jpg" alt="Pic 9"></div>
+      <div class="item" onclick="setMainImage('pics/a10.jpg')"><img src="pics/a10.jpg" alt="Pic 10"></div>
+      <div class="item" onclick="setMainImage('pics/a11.jpg')"><img src="pics/a11.jpg" alt="Pic 11"></div>
+
     </div>
   </div>
   
@@ -86,7 +92,7 @@
           <div class="web-ap">
 
             <div>
-              <a href="https://mothadaka-nani.github.io/rock-paper-scissors-game/"><div style="background: url(app1.jpg);
+              <a href="https://mothadaka-nani.github.io/rock-paper-scissors-game/"><div style="background: url(extrapics/app1.jpg);
             background-size: cover;" class="web-apps"></div>
               </a>
               <div class="web-app-text">
@@ -94,7 +100,7 @@
             </div>
 
             <div>
-              <a href="https://mothadaka-nani.github.io/CLASSROOM-ATTENDANCE-APPLICATION/"><div style="background: url(app2.jpg);
+              <a href="https://mothadaka-nani.github.io/CLASSROOM-ATTENDANCE-APPLICATION/"><div style="background: url(extrapics/app2.jpg);
             background-size: cover;" class="web-apps"></div>
               </a>
               <div class="web-app-text">
@@ -102,7 +108,7 @@
             </div>
 
             <div>
-              <a href="https://mothadaka-nani.github.io/music-player/"><div style="background: url(app3.jpg);
+              <a href="https://mothadaka-nani.github.io/music-player/"><div style="background: url(extrapics/app3.jpg);
             background-size: cover;" class="web-apps"></div>
               </a>
               <div class="web-app-text">
@@ -110,7 +116,7 @@
             </div>
 
             <div>
-              <a href="https://mothadaka-nani.github.io/todo-List/"><div style="background: url(app4.jpg);
+              <a href="https://mothadaka-nani.github.io/todo-List/"><div style="background: url(extrapics/app4.jpg);
             background-size: cover;" class="web-apps"></div>
               </a>
               <div class="web-app-text">
@@ -245,7 +251,7 @@
   </div>
   
   <div class="finalfoot">
-    <img src="a1.png" alt="Footer Image">
+    <img src="pics/a6.png" alt="Footer Image">
     <div class="final-text"><p>" Built by me from scratch with passion and pixels "</p></div>
   </div>
 </body>
@@ -259,8 +265,8 @@
   const timestamp = new Date().getTime();
   style.innerHTML = `
     .extrabody::before {
-      -webkit-mask-image: url(bg1.gif?${timestamp});
-      mask-image: url(bg1.gif?${timestamp});
+      -webkit-mask-image: url(extrapics/bg1.gif?${timestamp});
+      mask-image: url(extrapics/bg1.gif?${timestamp});
     }
   `;
   document.head.appendChild(style);
