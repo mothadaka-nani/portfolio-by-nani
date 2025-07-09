@@ -13,32 +13,6 @@ function setMainImage(imageSrc) {
   `;
   document.head.appendChild(style);
 });
- const btn = document.getElementById('toggleBtn');
-  const incase = document.querySelector('.incase');
-  const extra2 = document.getElementById('extra2');
-
-  let isOn = false;
-
-  // Setup on page load
-  if (window.innerWidth >= 770) {
-    extra2.style.top = '-120px'; // Shift up initially on wide screens
-  } else {
-    extra2.style.top = '0px'; // No shift for small screens
-  }
-
-  btn.addEventListener('click', () => {
-    isOn = !isOn;
-
-    // Toggle gallery
-    incase.style.display = isOn ? 'block' : 'none';
-    btn.textContent = isOn ? 'EXIT GALLERY' : 'ENTER GALLERY';
-
-    if (window.innerWidth >= 770) {
-      extra2.style.top = isOn ? '0px' : '-120px';
-    } else {
-      extra2.style.top = '0px';
-    }
-  });
   //certi on off
   document.addEventListener('DOMContentLoaded', () => {
   const certiBtn = document.getElementById('certi-but');

@@ -59,13 +59,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 .extrabody::before{
   content: '';
+  height: 100%;
   position: absolute;
   inset: 0;
   background-image: url(extrapics/foot.jpg);
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   z-index: -1;
   mask-image: url(extrapics/bg1.gif);
@@ -77,7 +79,7 @@ body {
 }
 
 .card {
-  background: var(--primary-dark);
+  /* background: var(--primary-dark); */
   border-radius: 20px;
   padding: 25px;
   width: 100%;
@@ -86,6 +88,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: rgba(146, 146, 146, 0.1);
+  backdrop-filter:blur(8px);
+  border: rgba(255, 255, 255, 0.2) solid 1px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* ===== NAVIGATION ===== */
@@ -285,61 +291,11 @@ footer ul li:hover {
   }
 }
 
-.incase{
-  display: none;
-  color: var(--gold);
-  background-color: var(--primary-dark);
-}
-.incase.show {
-  background-color: var(--black);
-  width: 100vw;
-  padding: 10px 0;
-}
-
-.list {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 10px;
-  padding: 10px 5px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.list::-webkit-scrollbar {
-  height: 2px;
-}
-
-.list::-webkit-scrollbar-track {
-  background: rgba(154, 142, 129, 0.2);
-  border-radius: 10px;
-}
-
-.list::-webkit-scrollbar-thumb {
-  background: var(--accent-maroon);
-  border-radius: 10px;
-}
-
-.list .item {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.list .item img {
-  height: 100px;
-  aspect-ratio: 9/16;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
 #extra2{
+  margin-top: -190px;
   position: relative;
   top:200px;
   transition: top 1s ease;
-  background:linear-gradient(var(--primary-light), gray);
 }
 
 /* ===== PAGE SPECIFIC STYLES ===== */
@@ -392,7 +348,7 @@ p{
   font-size: 2rem;
   font-weight: 100;
   width: 100%;
-  background: var(--name-gradient);
+  /* background: var(--name-gradient); */
   color: white;
   padding-top: 15px;
   text-align: center;
@@ -584,6 +540,8 @@ h3{
 }
 
 .finalfoot {
+  position: absolute;
+  top:200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -635,6 +593,17 @@ svg path{
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+/*desktop version */
 /* ===== RESPONSIVE DESIGN ===== */
 @media screen and (min-width: 770px) {
   .extrabody {
@@ -726,73 +695,12 @@ svg path{
     opacity: 1;
     transform: scale(1.2);
   }
-  
-  .incase.show {
-    background-color: var(--primary-dark);
-    width: 100%;
-    padding: 20px 0;
+  #extra2{
+    background-size: cover;
+    top:130px;
   }
-  
-  .list {
-    justify-content: center;
-    overflow: visible;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-  
-  .list .item {
-    flex: 0 0 auto;
-    filter: brightness(0)opacity(1);
-    z-index: 9;
-  }
-  
-  .list .item:hover {
-    filter: brightness(1)opacity(1);
-    transform: translateZ(200px);
-  }
-  
-  .list .item:hover + * {
-    filter: brightness(0.6)opacity(1);
-    transform: translateZ(100px)rotateY(30deg);
-  }
-  
-  .list .item:hover + * + * {
-    filter: brightness(0.4)opacity(1);
-    transform: translateZ(70px)rotateY(20deg);
-  }
-  
-  .list .item:hover + * + * + * {
-    filter: brightness(0.2)opacity(1);
-    transform: translateZ(30px)rotateY(10deg);
-  }
-  
-  .list .item:has(+*:hover) {
-    filter: brightness(0.6)opacity(1);
-    transform: translateZ(100px) rotateY(-30deg);
-  }
-  
-  .list .item:has(+*+*:hover) {
-    filter: brightness(0.4)opacity(1);
-    transform: translateZ(70px) rotateY(-20deg);
-  }
-  
-  .list .item:has(+*+*+*:hover) {
-    filter: brightness(0.2)opacity(1);
-    transform: translateZ(30px) rotateY(-10deg);
-  }
-  
-  .list .item img {
-    height:150px;
-    border-radius: 0px;
-  }
-  
   #page-name {
     font-size: 2.5rem;
-  }
-  
-  #extra2 {
-    top: 0;
-    background:linear-gradient(var(--primary-light), gray);
   }
   
   .web-ap{
