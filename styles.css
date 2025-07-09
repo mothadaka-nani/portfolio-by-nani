@@ -293,7 +293,7 @@ footer ul li:hover {
 }
 
 #extra2{
-  margin-top: -190px;
+  margin-top: -154px;
   position: relative;
   top:200px;
   transition: top 1s ease;
@@ -637,6 +637,7 @@ svg path{
 @media screen and (min-width: 770px) {
   .extrabody {
     padding:0;
+    min-width:10vh;
   }
   
   .card {
