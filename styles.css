@@ -187,28 +187,103 @@ main {
 
 .info ul li {
   margin: 10px 0;
-}    
-
-.cat-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  aspect-ratio: 9/16;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 0 auto;
 }
 
-.cat-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-}
+.slider-container {
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+            max-width: 200px;
+            /* height: 500px; */
+            aspect-ratio: 9/16;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0px 32px rgba(0, 0, 0, 1);
+        }
+        
+        .slider {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            
+        }
+        
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .control-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            backdrop-filter: blur(8px);
+        }
+        
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .control-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            z-index: 10;
+        }
+        
+        .indicator {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .indicator.active {
+            background: white;
+            transform: scale(1.2);
+        }
 
 /* ===== FOOTER & SPECIAL ELEMENTS ===== */
 footer {
@@ -295,7 +370,7 @@ footer ul li:hover {
 #extra2{
   margin-top: -154px;
   position: relative;
-  top:200px;
+  top:100px;
   transition: top 1s ease;
 }
 
@@ -703,12 +778,24 @@ svg path{
     list-style:circle;
     margin-left: 50px;
   }
-  
-  .cat-image {
-    max-width: 300px;
-    height: 500px;
+   .slider-container{
+    margin-top: 0px;
+    max-width: 350px;
+   }
+   .controls{
+    padding:  0 20px;
+   }
+   .control-btn{
+    width: 50px;
+    height: 50px;
+   }
+  .indicators{
+    gap: 10px;
   }
-  
+  .indicator{
+    width: 10px;
+    height: 10px;
+  }
   footer ul {  
     background-color: var(--black);
     border: var(--black) solid 15px;
@@ -727,7 +814,7 @@ svg path{
   }
   #extra2{
     background-size: cover;
-    top:124px;
+    top:200px;
   }
   #page-name {
     font-size: 2.5rem;
