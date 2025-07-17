@@ -83,6 +83,8 @@ body {
   border-radius: 20px;
   padding: 25px;
   width: 100%;
+  top:-10px;
+  margin-top: 15px;
   max-width: 1000px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -193,7 +195,7 @@ main {
             margin-top: 10px;
             position: relative;
             width: 100%;
-            max-width: 200px;
+            max-width: 170px;
             /* height: 500px; */
             aspect-ratio: 9/16;
             border-radius: 15px;
@@ -370,7 +372,7 @@ footer ul li:hover {
 #extra2{
   margin-top: -154px;
   position: relative;
-  top:100px;
+  top:120px;
   transition: top 1s ease;
 }
 
@@ -414,7 +416,7 @@ p{
   margin-top: 20px;
   margin-bottom: 10px;
   color: #c4c4c4;
-  font-family: 'Gwendolyne', sans-serif;
+  font-family:'Godber',sans-serif;
   font-weight: 100;
 }
 
@@ -534,6 +536,7 @@ h3{
   flex-direction: column;
   font-family:'Godber', sans-serif;
   flex-wrap: wrap;
+  font-weight: 100;
   /* background: var(--certi-gradient); */
   font-size: 2rem;
   letter-spacing: 2px;
@@ -548,6 +551,7 @@ h3{
   margin: 0;
   font-size: 10px;
   color: #ffffff;
+  font-weight: 100;
 }
 
 .certi-button {
@@ -814,7 +818,7 @@ svg path{
   }
   #extra2{
     background-size: cover;
-    top:200px;
+    top:90px;
   }
   #page-name {
     font-size: 2.5rem;
